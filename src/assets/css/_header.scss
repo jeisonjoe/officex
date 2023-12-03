@@ -1,0 +1,79 @@
+.site-header {
+  width: 100%;
+  min-height: 80vh;
+  background: url("../images/pexels-photo-4069291.webp") no-repeat center;
+  background-size: cover;
+  padding: 4rem 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .site-title {
+    font-size: 14rem;
+    font-weight: 900;
+  }
+
+  .sub-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .header-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    span {
+      font-size: 1.2rem;
+    }
+    .selectors-nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      width: fit-content;
+      background-color: #fff;
+      border-radius: 2rem;
+      color: #000;
+      padding: 0.5rem 0.5rem;
+      padding-left: 2rem;
+
+      .dropdown-items {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .dropdown-item {
+        display: flex;
+        gap: 1.4rem;
+        border-left: $border-light;
+        padding-left: 2rem;
+        cursor: pointer;
+
+        &:first-child {
+          padding-left: 0;
+          border-left: none;
+        }
+      }
+
+      .search-btn {
+        background-color: #000;
+        color: #fff;
+        padding: 1.2rem 2rem;
+        border-radius: 1.6rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

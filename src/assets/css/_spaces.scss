@@ -1,0 +1,65 @@
+.spaces {
+  width: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding-left: 6rem;
+  padding-block: 8rem;
+
+  .text-items {
+    display: flex;
+    letter-spacing: -0.35px;
+
+    span {
+      font-size: 1.1rem;
+      width: 30%;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 2rem;
+      width: 29rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+  }
+
+  .imgs-container {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .img-item {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 25rem;
+        aspect-ratio: 2/1.6;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1.8rem;
+      }
+
+      .post-title {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+      span {
+        margin-top: 6px;
+        color: #333333;
+      }
+    }
+  }
+
+  .browse-all-btn {
+    @include button-style(#fff, #000);
+  }
+}
